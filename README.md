@@ -60,10 +60,19 @@ Also using NLTK, basic math operation we can modify our dataframe.
 ## Inference
 
 ### Top words for which upvotes>500
+
 we can analyse the words which are most common in "title" 
 
+![alt text](https://github.com/adijindal30/Eluvio_DS_Challenge/blob/ffd651c98ce40c911513f1f74c86c8021fb882f3/download.png)
+
 ### compute effect of the time on total up votes
+
 This answer the question about, at which point of time one should create the headlines
 
+![alt text](https://github.com/adijindal30/Eluvio_DS_Challenge/blob/ffd651c98ce40c911513f1f74c86c8021fb882f3/download%20(1).png)
+
 ### Effect of over 18 posts on up votes
+
 By comparing graph we can whether over 18 posts has any effect on getting more votes.
+
+![alt text](https://github.com/adijindal30/Eluvio_DS_Challenge/blob/ffd651c98ce40c911513f1f74c86c8021fb882f3/download%20(2).png)
