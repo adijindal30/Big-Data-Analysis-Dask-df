@@ -36,7 +36,7 @@ import pandas as pd
 ```
 
 ## Data Preprocessing
-The following code load the data into dask dataframe,where using the <code>blocksize</code> will define how many memory should our RAM use.
+The following code load the data into dask dataframe,where using the <code>blocksize</code>(Number of bytes by which to cut up larger files) will define how many memory should our RAM use.
 
 
 ```sh
@@ -47,9 +47,21 @@ df = dd.read_csv(
     blocksize=64000000 # = 64 Mb chunks
 )
 ```
-<code> <i>This text will be italic</i> <b>this text will be bold</b> </code>
 
+Further we get statistics of the whole data using this code:
 
+```sh
+df.describe(include="all").compute()
+```
+Using this we can see, that "category", "down_votes" feature are redundant, as they have same values for all data point, and so we can drop them.
+Also using NLTK, basic math operation we can modify our dataframe.
 
 
 ## Inference
+
+### Top words for which upvotes>500
+we can analyse the words which are most common in "title" 
+
+### compute effect of the time on total up votes
+
+### Effect of over 18 posts on up votes
